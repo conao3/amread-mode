@@ -1,6 +1,6 @@
 ;;; amread-mode.el --- A minor mode helper user reading.
 
-;;; Time-stamp: <2020-01-30 17:56:01 stardiviner>
+;;; Time-stamp: <2020-01-30 17:58:16 stardiviner>
 
 ;; Authors: stardiviner <numbchild@gmail.com>
 ;; Package-Requires: ((emacs "24"))
@@ -47,7 +47,9 @@
          (length (+ (skip-chars-forward "^\s\t\n—") (skip-chars-forward "—")))
          (end (point)))
     (if (eobp)
-        (amread-stop)
+        (progn
+          (amread-stop)
+          (setq amread--current-position nil))
       ;; create the overlay if does not exist
       (unless amread--overlay
         (setq amread--overlay (make-overlay begin end)))

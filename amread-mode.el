@@ -1,6 +1,6 @@
 ;;; amread-mode.el --- A minor mode helper user reading.
 
-;;; Time-stamp: <2020-01-30 17:45:35 stardiviner>
+;;; Time-stamp: <2020-01-30 17:51:30 stardiviner>
 
 ;; Authors: stardiviner <numbchild@gmail.com>
 ;; Package-Requires: ((emacs "24"))
@@ -64,6 +64,7 @@
 (defun amread-start ()
   "Start / resume amread."
   (interactive)
+  (read-only-mode 1)
   ;; resume from stopped position
   (if amread--current-position
       (goto-char amread--current-position)
@@ -78,7 +79,8 @@
     (when amread--running
       (cancel-timer amread--running)
       (setq amread--running nil)
-      (delete-overlay amread--overlay))))
+      (delete-overlay amread--overlay)))
+  (read-only-mode -1))
 
 (defun amread-pause-or-resume ()
   "Pause or resume amread."

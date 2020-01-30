@@ -1,6 +1,6 @@
 ;;; amread-mode.el --- A minor mode helper user reading.
 
-;;; Time-stamp: <2020-01-30 17:51:30 stardiviner>
+;;; Time-stamp: <2020-01-30 17:54:22 stardiviner>
 
 ;; Authors: stardiviner <numbchild@gmail.com>
 ;; Package-Requires: ((emacs "24"))
@@ -100,6 +100,7 @@
 (define-minor-mode amread-mode
   "I'm reading mode."
   :init nil
+  :lighter " I'm reading "
   :keymap amread-mode-map
   (if amread-mode
       (amread-start)

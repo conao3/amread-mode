@@ -1,6 +1,6 @@
 ;;; amread-mode.el --- A minor mode helper user reading.
 
-;;; Time-stamp: <2020-01-30 17:37:41 stardiviner>
+;;; Time-stamp: <2020-01-30 17:39:27 stardiviner>
 
 ;;; Commentary:
 
@@ -11,10 +11,10 @@
 
 ;;; Code:
 
-(defcustom amread-wps 2
+(defcustom amread-wps 3.0
   "Read words per second."
-  :type 'number
-  :safe #'numberp
+  :type 'float
+  :safe #'floatp
   :group 'amread)
 
 (defvar amread--running nil)

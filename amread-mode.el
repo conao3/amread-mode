@@ -1,6 +1,6 @@
 ;;; amread-mode.el --- A minor mode helper user reading.
 
-;;; Time-stamp: <2020-01-30 17:35:59 stardiviner>
+;;; Time-stamp: <2020-01-30 17:37:41 stardiviner>
 
 ;;; Commentary:
 
@@ -69,7 +69,7 @@
 
 (defvar amread-mode-map
   (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "q") 'amread-stop)
+    (define-key map (kbd "q") 'amread-mode)
     (define-key map (kbd "SPC") 'amread-pause-or-resume)
     (define-key map [remap keyaobrd-quit] 'amread-stop)
     map)

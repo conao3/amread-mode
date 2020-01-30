@@ -1,6 +1,6 @@
 ;;; amread-mode.el --- A minor mode helper user reading.
 
-;;; Time-stamp: <2020-01-30 16:37:07 stardiviner>
+;;; Time-stamp: <2020-01-30 17:33:31 stardiviner>
 
 ;;; Commentary:
 
@@ -19,6 +19,7 @@
 
 (defvar amread--running nil)
 (defvar amread--overlay nil)
+(defvar amread--current-position nil)
 
 (defun amread--update ()
   "Moving amread cursor forward."
@@ -34,6 +35,7 @@
       (when amread--overlay
         ;; (delete-overlay amread--overlay)
         (move-overlay amread--overlay begin end))
+      (setq amread--current-position (point))
       (overlay-put amread--overlay
                    'face '((foreground-color . "white")
                            (background-color . "dark green")))
@@ -42,6 +44,10 @@
 (defun amread-start ()
   "Start / resume amread."
   (interactive)
+  ;; resume from stopped position
+  (if amread--current-position
+      (goto-char amread--current-position)
+    (goto-char 0))
   (setq amread--running
         (run-with-timer 0 (/ 1.0 amread-wps) #'amread--update)))
 

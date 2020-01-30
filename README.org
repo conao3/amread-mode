@@ -1,0 +1,18 @@
+* Intro
+
+This is a minor mode helping user reading. Similar with Spritz (speed read).
+
+* Screencast
+
+
+
+* Usage
+
+1. enable amread-mode with command ~amread-mode~.
+2. stop amread-mode minor mode by pressing =[q]=.
+
+* Plan
+
+- [ ] resume from the position where stoped
+- [ ] support Chinese context
+  - [ ] 自动内容分词，将分词作为一个 word, 在分词的结果上进行移动

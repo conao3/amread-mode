@@ -1,6 +1,6 @@
 ;;; amread-mode.el --- A minor mode helper user reading.
 
-;;; Time-stamp: <2020-01-30 15:34:53 stardiviner>
+;;; Time-stamp: <2020-01-30 16:37:07 stardiviner>
 
 ;;; Commentary:
 
@@ -65,9 +65,9 @@
   "I'm reading mode."
   :init nil
   :keymap amread-mode-map
-  (if amread--running
-      (amread-stop)
-    (amread-start)))
+  (if amread-mode
+      (amread-start)
+    (amread-stop)))
 
 
 

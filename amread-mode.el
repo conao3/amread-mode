@@ -1,6 +1,26 @@
 ;;; amread-mode.el --- A minor mode helper user reading.
 
-;;; Time-stamp: <2020-01-30 17:39:27 stardiviner>
+;;; Time-stamp: <2020-01-30 17:45:35 stardiviner>
+
+;; Authors: stardiviner <numbchild@gmail.com>
+;; Package-Requires: ((emacs "24"))
+;; Package-Version: 0.1
+;; Keywords: read
+;; homepage: https://github.com/stardiviner/amread-mode
+
+;; amread-mode is free software; you can redistribute it and/or modify it
+;; under the terms of the GNU General Public License as published by
+;; the Free Software Foundation; either version 3, or (at your option)
+;; any later version.
+;;
+;; amread-mode is distributed in the hope that it will be useful, but WITHOUT
+;; ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+;; or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public
+;; License for more details.
+;;
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 

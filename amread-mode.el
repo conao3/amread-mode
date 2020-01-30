@@ -1,11 +1,11 @@
-;;; amread-mode.el --- A minor mode helper user reading.
+;;; amread-mode.el --- A minor mode helper user reading
 
-;;; Time-stamp: <2020-01-30 18:12:46 stardiviner>
+;;; Time-stamp: <2020-01-30 19:35:41 stardiviner>
 
 ;; Authors: stardiviner <numbchild@gmail.com>
-;; Package-Requires: ((emacs "24"))
+;; Package-Requires: ((emacs "24.3"))
 ;; Package-Version: 0.1
-;; Keywords: read
+;; Keywords: tools reader
 ;; homepage: https://github.com/stardiviner/amread-mode
 
 ;; amread-mode is free software; you can redistribute it and/or modify it
@@ -23,8 +23,8 @@
 ;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
-
-;;; Usage:
+;;; 
+;;; Usage
 ;;;
 ;;; 1. Launch amread-mode with command `amread-mode'.
 ;;; 2. Stop amread-mode by pressing [q].

@@ -4,7 +4,7 @@ This is a minor mode helping user reading. Similar with Spritz (speed read).
 
 * Screencast
 
-
+[[file:amread-mode.gif]]
 
 * Usage
 

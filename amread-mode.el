@@ -1,6 +1,6 @@
 ;;; amread-mode.el --- A minor mode helper user reading
 
-;;; Time-stamp: <2020-02-02 17:29:48 stardiviner>
+;;; Time-stamp: <2020-02-02 17:31:02 stardiviner>
 
 ;; Authors: stardiviner <numbchild@gmail.com>
 ;; Package-Requires: ((emacs "24.3"))
@@ -20,7 +20,7 @@
 ;;
 ;;
 ;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
+;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 ;;; 

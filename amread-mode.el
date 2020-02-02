@@ -1,6 +1,6 @@
 ;;; amread-mode.el --- A minor mode helper user reading
 
-;;; Time-stamp: <2020-01-31 14:38:09 stardiviner>
+;;; Time-stamp: <2020-02-02 17:29:48 stardiviner>
 
 ;; Authors: stardiviner <numbchild@gmail.com>
 ;; Package-Requires: ((emacs "24.3"))
@@ -44,7 +44,6 @@
 (defun amread--update ()
   "Moving amread cursor forward."
   (let* ((begin (point))
-         (length (+ (skip-chars-forward "^\s\t\n—") (skip-chars-forward "—")))
          (end (point)))
     (if (eobp)
         (progn
@@ -53,9 +52,8 @@
       ;; create the overlay if does not exist
       (unless amread--overlay
         (setq amread--overlay (make-overlay begin end)))
-      ;; move forward overlay
+      ;; move overlay forward
       (when amread--overlay
-        ;; (delete-overlay amread--overlay)
         (move-overlay amread--overlay begin end))
       (setq amread--current-position (point))
       (overlay-put amread--overlay

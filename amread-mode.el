@@ -1,6 +1,6 @@
-;;; amread-mode.el --- A minor mode helper user reading
+;;; amread-mode.el --- A minor mode helper user reading -*- lexical-binding: t; -*-
 
-;;; Time-stamp: <2020-02-02 17:31:02 stardiviner>
+;;; Time-stamp: <2020-02-02 17:37:14 stardiviner>
 
 ;; Authors: stardiviner <numbchild@gmail.com>
 ;; Package-Requires: ((emacs "24.3"))
